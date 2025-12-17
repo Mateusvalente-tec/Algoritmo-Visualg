@@ -1,0 +1,41 @@
+Algoritmo "CalculoIMC"
+
+Var
+   M, A, IMC: Real
+
+Inicio
+      Escreva ("Massa (KG): ")
+      Leia (M)
+      Escreva ("Altura (M): ")
+      Leia (A)
+      
+      IMC <- M/ (A ^ 2)
+      Escreva ("IMC calculado: ", IMC:5:2 )
+      Se (IMC < 17) entao
+         EscrevaL (" - Muito abaixo do peso ")
+      senao
+           Se (IMC <18.5) entao
+              EscrevaL (" - Abaixo do peso. ")
+           senao
+                Se (IMC >= 18.5) e (IMC < 25)entao
+                   EscrevaL (" - Peso ideal")
+                senao
+                     Se (IMC >= 25) e (IMC < 30) entao
+                        EscrevaL (" - Sobrepeso")
+                     senao
+                          Se (IMC >= 30) e (IMC < 35) entao
+                             EscrevaL (" - Obesidade")
+                          senao
+                               Se (IMC >= 35) e (IMC < 45) entao
+                                  EscrevaL (" - Obesidade Severa")
+                               senao
+                                    EscrevaL (" - Obesidade Morbida"
+                               FimSe
+                          FimSe
+                     FimSe
+                FimSe
+           FimSe                                           .
+      FimSe
+      
+      
+Fimalgoritmo
